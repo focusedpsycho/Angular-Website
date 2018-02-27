@@ -1,0 +1,22 @@
+#styles-list{
+	list-style: upper-roman;
+ margin-bottom: 30px;
+}
+
+.my-cont{
+
+	text-align: left;
+	margin-top: 5%;
+}
+header.masthead{
+	background-image:url('https://steemit-production-imageproxy-upload.s3.amazonaws.com/DQmTSJMXQTMbXJKTMoqZPW3YYhGnN2CsV5bpeMnWMe5R3KM') ;
+}
+h1,h4,h5,h3,h2{
+	font-weight: 400;
+	border-bottom: 1px solid rgb(0,62,83);
+
+}
+
+.text-uppercase{
+	border: none;
+}

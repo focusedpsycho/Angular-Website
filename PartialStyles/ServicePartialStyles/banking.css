@@ -1,0 +1,43 @@
+#styles-list{
+  list-style: upper-roman;
+}
+
+.my-cont{
+
+  text-align: left;
+  margin-top: 5%;
+}
+header.masthead{
+  background-image:url('https://images.pond5.com/bank-vault-full-money-footage-000588623_prevstill.jpeg') ;
+}
+h1,h4,h5,h3,h2{
+  font-weight: 400;
+  border-bottom: 1px solid rgb(0,62,83);
+
+}
+
+.text-uppercase{
+  border: none;
+}
+.fill {
+     width: 100%;
+  height: 350px;
+  
+  position: relative;
+  overflow: hidden;
+  }
+.col-md-6{
+  margin-bottom:7%;
+  margin-top:5%;
+  
+  text-align: left;
+}
+
+.col-md-6>p{
+  padding-top: 3.5%;
+
+}
+.row{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}

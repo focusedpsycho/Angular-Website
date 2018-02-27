@@ -1,0 +1,39 @@
+#styles-list{
+	list-style: upper-roman;
+}
+
+.my-cont{
+
+	text-align: left;
+	margin-top: 5%;
+}
+header.masthead{
+	background-image:url('https://autojosh.com/wp-content/uploads/2016/06/no-steering.jpg') ;
+}
+h1,h4,h5,h3,h2{
+	font-weight: 400;
+	border-bottom: 1px solid rgb(0,62,83);
+
+}
+
+.text-uppercase{
+	border: none;
+}
+.fill {
+     width: 160px;
+  height: 120px;
+  
+  position: relative;
+  overflow: hidden;
+  }
+.col-md-6{
+  margin-bottom:7%;
+  margin-top:5%;
+  
+  text-align: left;
+}
+
+.col-md-6>p{
+  padding-top: 3.5%;
+
+}

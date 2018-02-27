@@ -1,0 +1,36 @@
+#styles-list{
+	list-style: upper-roman;
+}
+
+.my-cont{
+
+	text-align: left;
+	margin-top: 5%;
+}
+header.masthead{
+	background-image:url('https://s3-eu-west-2.amazonaws.com/images.s3.cpm-int.com/wp-content/uploads/sites/29/2017/05/23112519/FMCG-Client-Mars-stock-image-107058154.jpg') ;
+}
+h1,h4,h5,h3,h2{
+	font-weight: 400;
+	letter-spacing: 2px;
+
+}
+h1,h2{
+  border-bottom: 2px solid rgb(0,62,83);
+}
+
+.text-uppercase{
+	border: none;
+}
+
+.col-md-6{
+  margin-bottom:7%;
+  margin-top:5%;
+  border-left: 1px solid rgb(0,62,83);
+  text-align: left;
+}
+
+.col-md-6>p{
+  padding-top: 3.5%;
+
+}

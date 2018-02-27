@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="PuchoModule" >
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type ="image/x-icon" href="Images/pucho-icon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,700,800" rel="stylesheet">
+    <title> Home | Pucho</title>
+
+    
+     <link href="Css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+     <link href="Css/bootstrap.min.css" rel="stylesheet">
+     <link href="Css/index.css" rel="stylesheet">
+     <link ui-css>
+
+    <!-- Bootstrap core CSS -->
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript"  src="lib/angular-ui-router.min.js"></script>
+ 
+    <script type="text/javascript" src="lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
+    <script type="text/javascript" src="lib/angular-animate.min.js"></script>
+     <script type="text/javascript" src="angular-ui-router-css-master/js/angular-ui-router-css.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <script src="betsol-load-stylesheet/dist/betsol-load-stylesheet.js"></script>
+    <script src="src/creative.js"></script>
+    <script type="text/javascript" src="node_modules/angular-ui-carousel/dist/ui-carousel.js"></script>
+   
+
+
+
+  
+  </head>
+
+
+
+
+  <body ng-show='!stateIsLoading' id="page-top" ng-init="navCollapsed=true">
+
+
+         <nav class="navbar navbar-expand-lg navbar-light fixed-top"  change-class-on-scroll offset="100" scroll-class="navbar-shrink" id="mainNav" ng-class="{'navbar-shrink': !navCollapsed}">
+
+           <div class="container">
+
+           <a class="navbar-brand js-scroll-trigger" ui-sref="/home" href="" ><img id="logo1" class="img-responsive2" src="Images/pucho.png"> Pucho</a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"  ng-click="navCollapsed = !navCollapsed">
+
+            <span class="navbar-toggler-icon"></span>
+
+             </button>
+
+             <div class="collapse navbar-collapse" id="navbarResponsive" uib-collapse="navCollapsed" ng-class="{'show':!navCollapsed}">
+             <ul class="nav navbar-nav ml-auto" ng-controller="NavItemsController as navs">
+
+
+
+             <li class="nav-item dropdown "  ng-mouseenter="navs.hover[0]=true"
+               ng-mouseleave="navs.hover[0]=false">
+              <a class="nav-link dropdown-link" ui-sref="/Products" ng-class="{'active': navs.hover[0]}">Products</a>
+               <ul class="dropdown-menu" ng-show="navs.hover[0]">
+              
+              <li ng-repeat="item in navs.products track by $index"><i class="fa fa-clone" aria-hidden="true"></i><a href="" ui-sref="Products/{{item}}" title="{{}}">{{item}}</a>  </li>
+              </ul>
+               </li>
+
+
+
+              <li class="nav-item dropdown "  ng-mouseenter="navs.hover[1]=true"
+              ng-mouseleave="navs.hover[1]=false">
+              <a class=" nav-link dropdown-link"  ui-sref="/Solutions" ng-class="{'active': navs.hover[1]}">Solutions</a>
+         
+               <ul class="dropdown-menu split-menu "  ng-show="navs.hover[1]">
+              
+              <li ng-repeat="item in navs.solutions track by $index"><i class="fa fa-angle-double-right" aria-hidden="true"></i><a ui-sref="/Services/{{item}}" title="{{item}}">{{item}}</a></li>
+              
+            
+              </ul>
+               </li>
+
+
+             
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" ui-sref="/Careers">Careers</a>
+              </li>
+               <li class="nav-item">
+               <a class="nav-link js-scroll-trigger" ui-sref="/About">About</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link js-scroll-trigger" ui-sref="/Contact">Contact</a>
+               </li>
+               <li class="nav-item">
+               <a class="nav-link js-scroll-trigger" ui-sref="/Careers">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex" ui-view="top">
+
+    </header>
+<!----- header ends> -------><!-->
+
+
+
+         <div class="container my-class" ui-view="center" id="redirect" ></div>
+
+
+
+ <footer ng-controller="footerController as footer">
+  <div class="container">
+  
+  
+     <ul id="my-list1">
+      <li ng-repeat="tab in footer.tabs"><a ui-sref="/{{tab}}">{{tab}}</a></li>
+
+      </ul>
+
+  <div class="share-icons">
+          
+                 
+     <ul class="social-network social-circle" >
+            <li ng-repeat="icon in footer.icons"><a href="#" class="ico{{icon[0]}}" title="{{icon[0]}}"><i class="fa fa-{{icon[1]}}"></i></a></li>
+                        
+      </ul> 
+      
+   </div>
+  
+
+   
+    <ul id="my-list-2">
+      <li><a href="terms.html">Terms & Conditions </a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+  </div>
+ 
+</div>
+  
+<div class="copyright">
+  <div class="container">
+     
+    <div class="sites">
+
+      © 2017 - All Rights with Pucho
+    </div>
+  </div>
+</div>
+
+</footer>
+  
+
+  </body>
+
+</html>

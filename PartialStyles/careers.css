@@ -1,0 +1,23 @@
+
+
+header.masthead {
+  
+  background-image: url("https://images.unsplash.com/photo-1503564996084-7acb58ec325c?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+   }
+
+
+
+
+@media(min-width: 992px)
+{
+p {
+    font-size: 18px;
+    
+    line-height: 1.38889;
+    margin-bottom: 2.0em;
+    margin-top:2.0em;
+    padding-right: 1.0em;
+    padding-right: 1.0em;
+}
+
+}

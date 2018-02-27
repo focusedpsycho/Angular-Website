@@ -1,0 +1,32 @@
+.container{
+	text-align: center;
+}
+
+.top{
+	
+	margin-left:25%%;
+    display:inline;
+}
+
+h3{
+	margin-top:5%;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+p{
+	margin-top: 3%;
+	margin-bottom: 3%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+blockquote{
+	margin:0;
+}
+
+header.masthead{
+
+	 background-image: url("https://images.unsplash.com/photo-1495420434947-41fd0fbab21f?auto=format&fit=crop&w=1051&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+	 height: 70vh;
+	 min-height: 0;
+}

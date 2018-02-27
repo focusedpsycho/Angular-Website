@@ -1,0 +1,36 @@
+<ui-carousel 
+  slides="ctrl.slides"
+  slides-to-show="3"
+  slides-to-scroll="1"
+  on-init="ctrl.onCarouselInit()"
+  on-before-change="ctrl.onCarouselBeforeChange()"
+  on-after-change="ctrl.onCarouselAfterChange()">
+ 
+  <!-- For slider render -->
+  <carousel-item>
+    <!-- placed your item content here -->
+    <div ng-attr-id="{{'slide'}}{{item.index}}"></div>
+    <div class="overlay"></div>
+    <div  class="inner-content"> 
+
+      <h1> {{item.productName}}</h1>
+     <p> {{item.description}} </p>
+     </div>
+    <!-- end -->
+  </carousel-item>
+ 
+ 
+  <!-- 
+  <carousel-prev>
+  
+    <button>Prev</button>
+   
+  </carousel-prev>
+ 
+  <carousel-next>
+  
+    <button>Next</button>
+   
+  </carousel-next> -->
+ 
+</ui-carousel>

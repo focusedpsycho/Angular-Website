@@ -1,0 +1,142 @@
+
+.veryinnerdiv{
+  width: 100%;
+  height: 100%;
+border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.inner-content{
+   width: 100%;
+   height: 100%;
+     z-index: 15;
+  position: absolute;
+  padding-top:40vh;
+
+}
+
+.overlay{
+  width:100%;
+  height: 100%;
+  z-index: 5;
+  background: #000; 
+  opacity: 0.6;
+   position: absolute;
+}
+
+
+#slide1{
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1495510096779-5fbe73258c83?auto=format&fit=crop&w=1049&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+  position: absolute;
+  z-index: 0;
+ 
+}
+#slide2{
+   width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1493500146995-7167488df174?auto=format&fit=crop&w=1055&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+   z-index: 0;
+
+}
+#slide3{
+  background-image: url("https://images.unsplash.com/photo-1455461491901-a0990c10d84c?auto=format&fit=crop&w=1050&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+ width: 100%;
+  height: 100%;
+   z-index: 0;
+   position: absolute;
+  
+};
+
+.second-div{
+  display:none;
+
+}
+.first-div .second-div {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  transition: 1.0s;
+  z-index: 10;
+  overflow: hidden;
+  
+  
+}
+.col-lg-4{
+  position: relative;
+  background-color: rgba(255, 255, 250, 0.4);
+
+}
+
+p {
+    font-size: 18px;
+    
+    line-height: 1.38889;
+    margin-bottom: 2.0em;
+   
+    padding-right: 2.0em;
+    padding-right: 2.0em;
+    
+
+}
+
+
+ 
+
+.container{
+  text-align: left;
+}
+
+.row{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left-left: 5%;
+  margin-right: 5%;
+}
+
+
+.col-lg-8{
+  position: relative;
+  left:10%;
+}
+ h1{
+  font-weight: normal;
+}
+
+.col-lg-8 p{
+  font-weight: 500;
+}
+.my-foot{
+  text-align: center;
+}
+h4{
+  font-weight: 500;
+}
+#my-h1{
+  font-weight: 500;
+}
+@media(max-width: 992px)
+{
+  .col-lg-8{
+    left:0;
+    margin-top: 10%;
+  }
+}
+.my-class{
+  margin-top: 7%;
+
+}
